@@ -1,0 +1,151 @@
+:root {
+    --font: "Nunito", sans-serif;
+    --white: white;
+    --black: #000;
+    --theme1: #343c69;
+    --btn: #e94948;
+}
+
+.education {
+    top: 0;
+    right: 0;
+    z-index: 0;
+    opacity: 1;
+    display: block;
+    padding-top: 1rem;
+}
+
+.box-container {
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 1rem;
+}
+
+.box {
+    width: 27rem;
+    margin: 4rem 1rem;
+    border-left: 0.2rem solid var(--theme1);
+    position: relative;
+}
+
+.box1 {
+    animation: float 3.5s linear infinite;
+}
+
+.box2 {
+    animation: float 3s linear infinite;
+}
+
+.box3 {
+    animation: float 4s linear infinite;
+}
+
+@keyframes float {
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-0.8rem);
+    }
+}
+
+.box span {
+    background: var(--btn);
+    color: #fff;
+    border-radius: 5rem;
+}
+
+.box h2 {
+    font-size: 1.25rem;
+    color: var(--theme1);
+    padding-top: 1.5rem;
+}
+
+.box p {
+    width: 100%;
+    text-align: justify;
+    color: #151514;
+}
+
+.icon {
+    position: absolute;
+    padding: 0.3rem;
+    top: -1.5rem;
+    left: -1.4rem;
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
+    line-height: 5rem;
+    text-align: center;
+    font-size: 2rem;
+    color: var(--white);
+    background: var(--theme1);
+}
+
+.education-title {
+    color: var(--btn);
+    position: relative;
+    display: inline-block;
+}
+
+.education-title::before,
+.education-title::after {
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 2px;
+    background-color: var(--btn);
+}
+
+.education-title::before {
+    top: 0;
+    left: 0;
+}
+
+.education-title::after {
+    bottom: 0;
+    right: 0;
+}
+
+@media (min-width: 768px) {
+    .education {
+        min-height: 100vh;
+        padding: 1.875rem;
+    }
+    .box-container {
+        align-items: center;
+        padding-left: 3rem;
+    }
+    .box {
+        padding-left: 4rem;
+    }
+    .box span {
+        font-size: 1.3rem;
+        padding: 0.5rem 2.5rem;
+    }
+    .box p {
+        margin-top: 1rem;
+    }
+}
+
+@media (max-width: 765px) {
+    .education {
+        min-height: 100vh;
+        padding: 0.875rem;
+        justify-content: center;
+        align-items: center;
+    }
+    .box {
+        padding-left: 2rem;
+    }
+    .box span {
+        font-size: 0.8rem;
+        padding: 0.3rem 0.8rem;
+    }
+    .box p {
+        margin-top: 0.5rem;
+    }
+}

@@ -1,0 +1,141 @@
+:root {
+    --font: "Nunito", sans-serif;
+    --white: white;
+    --black: #000;
+    --theme1: #343c69;
+    --btn: #e94948;
+}
+
+.footer-container {
+    position: relative;
+    background: var(--theme1);
+    min-height: 100px;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.footer-start {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.footer-start-title {
+    color: white;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.footer-detail p {
+    color: white;
+    font-size: .8rem;
+}
+
+.footer-mid {
+    display: flex;
+    flex-direction: column;
+    gap: .9rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-links {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.social-icons a {
+    font-size: 2rem;
+    color: white;
+    display: inline-block;
+    transition: 0.5s;
+}
+
+.social-icons a:hover {
+    transform: translateY(-10px);
+}
+
+.footer-menu {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.footer-menu a {
+    color: white;
+}
+
+.footer-menu a:hover {
+    font-weight: bolder;
+}
+
+.footer-copyright {
+    color: rgb(215, 215, 215);
+    font-size: 0.8rem;
+    margin-top: 0.7rem;
+}
+
+.footer-end {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+}
+
+.footer-end-title {
+    color: white;
+    font-size: .9rem;
+}
+
+.footer-github {
+    display: flex;
+    gap: .5rem;
+}
+
+.footer-github-icon a {
+    color: white;
+}
+
+.footer-github-text {
+    color: white;
+    font-size: .7rem;
+}
+
+.footer-github-text span {
+    color: rgb(0, 179, 255);
+}
+
+.footer-mobile {
+    display: none;
+}
+
+@media (max-width: 770px) {
+    .footer-container {
+        padding: 1 rem;
+        display: flex;
+        flex-direction: column;
+        gap: 5rem;
+    }
+    .footer-menu {
+        gap: 1rem;
+    }
+    .footer-mid p {
+        display: none;
+    }
+    .footer-mobile {
+        display: block;
+    }
+}
