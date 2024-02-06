@@ -23,7 +23,7 @@
         "predeploy": "npm run build",
         "deploy": "gh-pages -d build"
     },
-    "homepage": "https://Shrabya35.github.io/Shrabya-Portfolio",
+    "homepage": "https://Shrabya35.github.io/Portfolio",
     "eslintConfig": {
         "extends": [
             "react-app",
