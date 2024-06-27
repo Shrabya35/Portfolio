@@ -32,10 +32,12 @@ const Navbar = () => {
 
   return (
     <div className={`nav ${isScrolled ? "scrolled" : ""}`}>
-      <div className="nav-logo"><a href="#">{Logo}</a></div>
+      <div className="nav-logo">
+        <a href="#home">{Logo}</a>
+      </div>
       <ul className={`nav-menu ${isMenuOpen ? "active" : ""}`}>
-      <li className="nav-list">
-          <a href="#">Home</a>
+        <li className="nav-list">
+          <a href="#home">Home</a>
         </li>
         <li className="nav-list">
           <a href="#About">About</a>

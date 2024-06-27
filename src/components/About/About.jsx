@@ -5,11 +5,11 @@ import Skills from "./SKills";
 
 import AboutImg from "../../assets/about.png";
 import AboutMob from "../../assets/about-mob.png";
-import SrchImg from "../../assets/search.png"
-import Curly from "../../assets/curly.png"
-import PHP from "../../assets/php.png"
-import Div from "../../assets/div.png"
-import CV from "../../assets/CV.pdf";
+import SrchImg from "../../assets/search.png";
+import Curly from "../../assets/curly.png";
+import PHP from "../../assets/php.png";
+import Div from "../../assets/div.png";
+import CV from "../../assets/Shrabya_CV.pdf";
 
 import { IoMdCloudDownload } from "react-icons/io";
 
@@ -40,30 +40,30 @@ const About = () => {
             explore new opportunities. 🚀
           </p>
           <br />
-          <a href={CV} download="cv.pdf">
-            <button class="cv-btn">
+          <a href={CV} download="Shrabya_Cv.pdf">
+            <button className="cv-btn">
               download CV <IoMdCloudDownload />{" "}
             </button>
           </a>
         </div>
         <div className="about-right">
           <div className="about-img">
-          <div class="absolute icons icon-php">
-        <img src={PHP} alt="about-img" />
-        </div>
-        <div class="absolute icons icon-search">
-        <img src={SrchImg} alt="about-img" />
-        </div>
-        <div class="absolute icons icon-div">
-        <img src={Div} alt="about-img" />
-        </div>
-        <div class="absolute icons icon-curly">
-        <img src={Curly} alt="about-img" />
-        </div>
-        <div className="about-img">
-        <img src={AboutImg}className="about-lap" alt="about-img" />
-          <img src={AboutMob} className="about-mob" alt="about-img" />  
-        </div>        
+            <div className="absolute icons icon-php">
+              <img src={PHP} alt="about-img" />
+            </div>
+            <div className="absolute icons icon-search">
+              <img src={SrchImg} alt="about-img" />
+            </div>
+            <div className="absolute icons icon-div">
+              <img src={Div} alt="about-img" />
+            </div>
+            <div className="absolute icons icon-curly">
+              <img src={Curly} alt="about-img" />
+            </div>
+            <div className="about-img">
+              <img src={AboutImg} className="about-lap" alt="about-img" />
+              <img src={AboutMob} className="about-mob" alt="about-img" />
+            </div>
           </div>
         </div>
       </div>

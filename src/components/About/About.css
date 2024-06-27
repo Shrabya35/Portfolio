@@ -1,209 +1,209 @@
 :root {
-    --font: "Nunito", sans-serif;
-    --white: white;
-    --black: #000;
-    --theme1: #343c69;
-    --btn: #e94948;
+  --font: "Nunito", sans-serif;
+  --white: white;
+  --black: #000;
+  --theme1: #343c69;
+  --btn: #e94948;
 }
 
 .About {
-    background-color: #e6e6e7;
-    padding: 40px 20px;
-    text-align: center;
+  background-color: #e6e6e7;
+  padding: 40px 20px;
+  text-align: center;
 }
 
 .about-title {
-    font-weight: bold;
-    color: var(--btn);
+  font-weight: bold;
+  color: var(--btn);
 }
 
 .icons {
-    position: absolute;
-    z-index: 5;
+  position: absolute;
+  z-index: 5;
 }
 
 .icon-php {
-    bottom: -17rem;
-    right: 28rem;
-    animation: dotsanimation 4s infinite;
+  bottom: -17rem;
+  right: 28rem;
+  animation: dotsanimation 4s infinite;
 }
 
 .icon-search {
-    bottom: -15rem;
-    right: 22rem;
-    animation: dotsanimation 3s infinite;
+  bottom: -15rem;
+  right: 22rem;
+  animation: dotsanimation 3s infinite;
 }
 
 .icon-div {
-    bottom: -19rem;
-    right: 16rem;
-    animation: dotsanimation 4s infinite;
+  bottom: -19rem;
+  right: 16rem;
+  animation: dotsanimation 4s infinite;
 }
 
 .icon-curly {
-    bottom: -23rem;
-    right: 10rem;
-    animation: dotsanimation 3.4s infinite;
+  bottom: -23rem;
+  right: 10rem;
+  animation: dotsanimation 3.4s infinite;
 }
 
 @media (min-width: 765px) {
-    .about-title {
-        font-size: 2.5rem;
-    }
-    .about-container {
-        padding: 1.5rem;
-        display: flex;
-        justify-content: space-evenly;
-        gap: 1rem;
-        align-items: center;
-    }
-    .about-left {
-        display: flex;
-        flex-direction: column;
-        align-items: start;
-        width: 45%;
-    }
-    .about-left p {
-        margin-top: 1rem;
-        width: 85%;
-        text-align: justify;
-        color: #151514;
-    }
-    .cv-btn {
-        background-color: var(--btn);
-        width: fit-content;
-        color: white;
-        padding: 0.8rem 1.3rem;
-        box-shadow: 5px 5px 7px 0px #0000003f;
-        cursor: pointer;
-        transition: all 0.5s;
-        font-weight: 500;
-        border: solid 3px transparent;
-        position: relative;
-        z-index: 1;
-        font-size: 1rem;
-        border-radius: 5rem;
-    }
-    .cv-btn::before {
-        content: "";
-        position: absolute;
-        background-color: #fff;
-        top: 0px;
-        left: 0;
-        right: 0;
-        bottom: 0px;
-        z-index: -1;
-        transform: scaleX(0);
-        transform-origin: left;
-        transition: all 0.8s;
-        border-radius: 5rem;
-    }
-    .cv-btn:hover::before {
-        transform: scaleX(1);
-        border-radius: 5rem;
-    }
-    .cv-btn:hover {
-        border: solid 3px var(--btn);
-        color: black;
-        border-radius: 5rem;
-    }
-    .about-mob {
-        display: none;
-    }
+  .about-title {
+    font-size: 2.5rem;
+  }
+  .about-container {
+    padding: 1.5rem;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 1rem;
+    align-items: center;
+  }
+  .about-left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 45%;
+  }
+  .about-left p {
+    margin-top: 1rem;
+    width: 85%;
+    text-align: justify;
+    color: #151514;
+  }
+  .cv-btn {
+    background-color: var(--btn);
+    width: fit-content;
+    color: white;
+    padding: 0.8rem 1.3rem;
+    box-shadow: 5px 5px 7px 0px #0000003f;
+    cursor: pointer;
+    transition: all 0.5s;
+    font-weight: 500;
+    border: solid 3px transparent;
+    position: relative;
+    z-index: 1;
+    font-size: 1rem;
+    border-radius: 5rem;
+  }
+  .cv-btn::before {
+    content: "";
+    position: absolute;
+    background-color: #fff;
+    top: 0px;
+    left: 0;
+    right: 0;
+    bottom: 0px;
+    z-index: -1;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: all 0.8s;
+    border-radius: 5rem;
+  }
+  .cv-btn:hover::before {
+    transform: scaleX(1);
+    border-radius: 5rem;
+  }
+  .cv-btn:hover {
+    border: solid 3px var(--btn);
+    color: black;
+    border-radius: 5rem;
+  }
+  .about-mob {
+    display: none;
+  }
 }
 
 @media (max-width: 765px) {
-    .about-title {
-        font-size: 2.5rem;
-    }
-    .about-container {
-        display: flex;
-        flex-direction: column-reverse;
-        padding-bottom: 3rem;
-    }
-    .icon-php {
-        display: none;
-    }
-    .icon-search {
-        display: none;
-    }
-    .icon-div {
-        display: none;
-    }
-    .icon-curly {
-        display: none;
-    }
-    .about-lap {
-        display: none;
-    }
-    .cv-btn {
-        background-color: var(--btn);
-        width: fit-content;
-        color: white;
-        padding: 0.8rem 2.3rem;
-        box-shadow: 5px 5px 7px 0px #0000003f;
-        font-size: 18px;
-        cursor: pointer;
-        transition: all 0.5s;
-        font-weight: 500;
-        border: solid 3px transparent;
-        position: relative;
-        z-index: 1;
-    }
-    .cv-btn::before {
-        content: "";
-        position: absolute;
-        background-color: #fff;
-        top: 0px;
-        left: 0;
-        right: 0;
-        bottom: 0px;
-        z-index: -1;
-        transform: scaleX(0);
-        transform-origin: left;
-        transition: all 0.8s;
-    }
-    .cv-btn:hover::before {
-        transform: scaleX(1);
-    }
-    .cv-btn:hover {
-        border: solid 3px var(--btn);
-        color: black;
-    }
+  .about-title {
+    font-size: 2.5rem;
+  }
+  .about-container {
+    display: flex;
+    flex-direction: column-reverse;
+    padding-bottom: 3rem;
+  }
+  .icon-php {
+    display: none;
+  }
+  .icon-search {
+    display: none;
+  }
+  .icon-div {
+    display: none;
+  }
+  .icon-curly {
+    display: none;
+  }
+  .about-lap {
+    display: none;
+  }
+  .cv-btn {
+    background-color: var(--btn);
+    width: fit-content;
+    color: white;
+    padding: 0.8rem 2.3rem;
+    box-shadow: 5px 5px 7px 0px #0000003f;
+    font-size: 18px;
+    cursor: pointer;
+    transition: all 0.5s;
+    font-weight: 500;
+    border: solid 3px transparent;
+    position: relative;
+    z-index: 1;
+  }
+  .cv-btn::before {
+    content: "";
+    position: absolute;
+    background-color: #fff;
+    top: 0px;
+    left: 0;
+    right: 0;
+    bottom: 0px;
+    z-index: -1;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: all 0.8s;
+  }
+  .cv-btn:hover::before {
+    transform: scaleX(1);
+  }
+  .cv-btn:hover {
+    border: solid 3px var(--btn);
+    color: black;
+  }
 }
 
-@media(min-width: 1020px) {
-    .icon-php {
-        display: none;
-    }
-    .icon-search {
-        display: none;
-    }
-    .icon-div {
-        display: none;
-    }
-    .icon-curly {
-        display: none;
-    }
-    .about-lap {
-        display: none;
-    }
-    .about-mob {
-        display: block;
-    }
+@media (min-width: 1020px) {
+  .icon-php {
+    display: none;
+  }
+  .icon-search {
+    display: none;
+  }
+  .icon-div {
+    display: none;
+  }
+  .icon-curly {
+    display: none;
+  }
+  .about-lap {
+    display: none;
+  }
+  .about-mob {
+    display: block;
+  }
 }
 
-@media(max-width: 950px) {
-    .icon-php {
-        display: none;
-    }
-    .icon-search {
-        display: none;
-    }
-    .icon-div {
-        display: none;
-    }
-    .icon-curly {
-        display: none;
-    }
+@media (max-width: 950px) {
+  .icon-php {
+    display: none;
+  }
+  .icon-search {
+    display: none;
+  }
+  .icon-div {
+    display: none;
+  }
+  .icon-curly {
+    display: none;
+  }
 }

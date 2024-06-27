@@ -1,24 +1,20 @@
 import React from "react";
+import { ReactTyped } from "react-typed";
 
-import Typed from 'react-typed';
-
-const TypeComponent = () => {
-  return (
-    <Typed
-      className="role"
+const TypeComponent = () => (
+  <div className="role">
+    <ReactTyped
       strings={[
-        'Web Designer',
-        'Web Developer',
-        'Problem Solver',
-        'Coder',
-        'Pro Learner',
+        "Web Designer",
+        "Web Developer",
+        "Problem Solver",
+        "Coder",
+        "Pro Learner",
       ]}
       typeSpeed={100}
-      backSpeed={80}
-      backDelay={1000}
       loop
     />
-  );
-};
+  </div>
+);
 
 export default TypeComponent;

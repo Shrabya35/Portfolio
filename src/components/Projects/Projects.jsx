@@ -1,8 +1,8 @@
 import React from "react";
 
-import Project1 from "../../assets/Project-1.png";
-import  Project2 from "../../assets/Project-2.png"
-import  Project3 from "../../assets/Project-3.png"
+import Project1 from "../../assets/lynxline.png";
+import Project2 from "../../assets/net-nest.png";
+import Project3 from "../../assets/sangeet.png";
 import "./Projects.css";
 
 import { FaGithub } from "react-icons/fa";
@@ -18,13 +18,13 @@ const Projects = () => {
         <div className="project-1 project-card">
           <img src={Project1} alt="" />
           <div className="project-detail">
-            <div className="project-card-title">Sangeet </div>
+            <div className="project-card-title">LynxLine</div>
             <div className="project-desc">
-              A spotify clone made with Html,Css and Javascript
+              A modern e-commerce platform built with the MERN stack.
             </div>
             <div className="project-btns">
               <a
-                href="https://github.com/Shrabya35/sangeet/blob/main/README.md"
+                href="https://github.com/Shrabya35/Flooring"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="project-rm"
@@ -32,21 +32,21 @@ const Projects = () => {
                 Read More
               </a>
               <a
-                href="https://github.com/Shrabya35/sangeet"
+                href="https://github.com/Shrabya35/LynxLine"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="project-github"
               >
                 <FaGithub />
               </a>
-              <a
-                href="https://shrabya35.github.io/sangeet/"
+              <div
+                href="https://shrabya35.github.io/Flooring/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="project-link"
+                className="project-link-none project-link "
               >
                 <FaLink />
-              </a>
+              </div>
             </div>
           </div>
         </div>
@@ -54,9 +54,9 @@ const Projects = () => {
         <div className="project-2 project-card">
           <img src={Project2} alt="" />
           <div className="project-detail">
-            <div className="project-card-title">Movie Hub </div>
+            <div className="project-card-title">Net Nest</div>
             <div className="project-desc">
-              A Movie searching site made with React JS 
+              Premier League Real Time stats site powered by React.js.
             </div>
             <div className="project-btns">
               <a
@@ -90,13 +90,13 @@ const Projects = () => {
         <div className="project-3 project-card">
           <img src={Project3} alt="" />
           <div className="project-detail">
-            <div className="project-card-title">Evans Flooring</div>
+            <div className="project-card-title">Sangeet </div>
             <div className="project-desc">
-              An online flooring service made with Html,Css and Javascript
+              A spotify clone made with Html,Css and Javascript
             </div>
             <div className="project-btns">
               <a
-                href="https://github.com/Shrabya35/Flooring"
+                href="https://github.com/Shrabya35/sangeet/blob/main/README.md"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="project-rm"
@@ -104,7 +104,7 @@ const Projects = () => {
                 Read More
               </a>
               <a
-                href="https://github.com/Shrabya35/Flooring"
+                href="https://github.com/Shrabya35/sangeet"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="project-github"
@@ -112,7 +112,7 @@ const Projects = () => {
                 <FaGithub />
               </a>
               <a
-                href="https://shrabya35.github.io/Flooring/"
+                href="https://shrabya35.github.io/sangeet/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="project-link"
@@ -125,13 +125,13 @@ const Projects = () => {
       </div>
 
       <a
-                href="https://github.com/Shrabya35?tab=repositories"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="more-projects project-rm"
-              >
-                More Projects <FaCodeMerge />
-              </a>
+        href="https://github.com/Shrabya35?tab=repositories"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="more-projects project-rm"
+      >
+        More Projects <FaCodeMerge />
+      </a>
     </div>
   );
 };

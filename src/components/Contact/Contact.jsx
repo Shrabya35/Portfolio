@@ -51,20 +51,20 @@ const Contact = () => {
       <div className="contact-title">Contact Me</div>
       <div className="contact-container">
         <div className="contact-left">
-          <div class="absolute cont-icons icon-what">
+          <div className="absolute cont-icons icon-what">
             <img src={ConWhat} alt="ConImg" />
           </div>
-          <div class="absolute cont-icons icon-cal">
+          <div className="absolute cont-icons icon-cal">
             <img src={ConCal} alt="ConImg" />
           </div>
-          <div class="absolute cont-icons icon-mail">
+          <div className="absolute cont-icons icon-mail">
             <img src={ConMail} alt="ConImg" />
           </div>
-          <div class="absolute cont-icons icon-phone">
+          <div className="absolute cont-icons icon-phone">
             <img src={ConPhone} alt="ConImg" />
           </div>
 
-          <div class="contact-img">
+          <div className="contact-img">
             <img src={ConImg} className="cont-lap" alt="ConImg" />
             <img src={ConMob} className="cont-mob" alt="ConImg" />
           </div>

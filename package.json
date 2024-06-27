@@ -15,8 +15,10 @@
         "react-scripts": "5.0.1",
         "react-scroll": "^1.9.0",
         "react-spring": "^9.7.3",
+        "react-text-transition": "^3.1.0",
         "react-toastify": "^10.0.4",
-        "react-typed": "^1.2.0",
+        "react-typed": "^2.0.12",
+        "typed.js": "^2.1.0",
         "web-vitals": "^2.1.4"
     },
     "scripts": {

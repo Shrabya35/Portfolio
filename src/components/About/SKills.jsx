@@ -1,37 +1,37 @@
-import React, { useEffect, useState } from 'react';
-import './Skills.css'; 
+import React, { useEffect, useState } from "react";
+import "./Skills.css";
 
 const Skills = () => {
   const [isVisible, setIsVisible] = useState(false);
   const [htmlProgress, setHtmlProgress] = useState(0);
   const [jsProgress, setJsProgress] = useState(0);
   const [reactProgress, setReactProgress] = useState(0);
-  const [pythonProgress, setPythonProgress] = useState(0);
+  const [mongoProgress, setmongoProgress] = useState(0);
   const speed = 20;
 
   useEffect(() => {
     const options = {
       root: null,
-      rootMargin: '0px',
-      threshold: 0.5 
+      rootMargin: "0px",
+      threshold: 0.5,
     };
 
     const observer = new IntersectionObserver(([entry]) => {
       setIsVisible(entry.isIntersecting);
     }, options);
 
-    observer.observe(document.getElementById('skills-section'));
+    observer.observe(document.getElementById("skills-section"));
 
     return () => observer.disconnect();
   }, []);
 
   useEffect(() => {
-    let htmlInterval, jsInterval, reactInterval, pythonInterval;
+    let htmlInterval, jsInterval, reactInterval, mongoInterval;
 
     if (isVisible) {
       htmlInterval = setInterval(() => {
-        setHtmlProgress(prevProgress => {
-          if (prevProgress >= 90) {
+        setHtmlProgress((prevProgress) => {
+          if (prevProgress >= 85) {
             clearInterval(htmlInterval);
             return prevProgress;
           } else {
@@ -41,8 +41,8 @@ const Skills = () => {
       }, speed);
 
       jsInterval = setInterval(() => {
-        setJsProgress(prevProgress => {
-          if (prevProgress >= 70) {
+        setJsProgress((prevProgress) => {
+          if (prevProgress >= 75) {
             clearInterval(jsInterval);
             return prevProgress;
           } else {
@@ -52,8 +52,8 @@ const Skills = () => {
       }, speed);
 
       reactInterval = setInterval(() => {
-        setReactProgress(prevProgress => {
-          if (prevProgress >= 55) {
+        setReactProgress((prevProgress) => {
+          if (prevProgress >= 65) {
             clearInterval(reactInterval);
             return prevProgress;
           } else {
@@ -62,10 +62,10 @@ const Skills = () => {
         });
       }, speed);
 
-      pythonInterval = setInterval(() => {
-        setPythonProgress(prevProgress => {
+      mongoInterval = setInterval(() => {
+        setmongoProgress((prevProgress) => {
           if (prevProgress >= 60) {
-            clearInterval(pythonInterval);
+            clearInterval(mongoInterval);
             return prevProgress;
           } else {
             return prevProgress + 1;
@@ -78,7 +78,7 @@ const Skills = () => {
       clearInterval(htmlInterval);
       clearInterval(jsInterval);
       clearInterval(reactInterval);
-      clearInterval(pythonInterval);
+      clearInterval(mongoInterval);
     };
   }, [isVisible]);
 
@@ -86,28 +86,56 @@ const Skills = () => {
     <div id="skills-section" className="Skills">
       <div className="skill-container">
         <div className="container">
-          <div className="circular-progress" style={{ background: `conic-gradient(#e94948 ${htmlProgress * 3.6}deg, #ededed 0deg)` }}>
+          <div
+            className="circular-progress"
+            style={{
+              background: `conic-gradient(#e94948 ${
+                htmlProgress * 3.6
+              }deg, #ededed 0deg)`,
+            }}
+          >
             <span className="progress-value">{htmlProgress}%</span>
           </div>
           <span className="skill-name">HTML & CSS</span>
         </div>
         <div className="container">
-          <div className="circular-progress" style={{ background: `conic-gradient(#e94948 ${jsProgress * 3.6}deg, #ededed 0deg)` }}>
+          <div
+            className="circular-progress"
+            style={{
+              background: `conic-gradient(#e94948 ${
+                jsProgress * 3.6
+              }deg, #ededed 0deg)`,
+            }}
+          >
             <span className="progress-value">{jsProgress}%</span>
           </div>
           <span className="skill-name">JavaScript</span>
         </div>
         <div className="container">
-          <div className="circular-progress" style={{ background: `conic-gradient(#e94948 ${reactProgress * 3.6}deg, #ededed 0deg)` }}>
+          <div
+            className="circular-progress"
+            style={{
+              background: `conic-gradient(#e94948 ${
+                reactProgress * 3.6
+              }deg, #ededed 0deg)`,
+            }}
+          >
             <span className="progress-value">{reactProgress}%</span>
           </div>
           <span className="skill-name">React</span>
         </div>
         <div className="container">
-          <div className="circular-progress" style={{ background: `conic-gradient(#e94948 ${pythonProgress * 3.6}deg, #ededed 0deg)` }}>
-            <span className="progress-value">{pythonProgress}%</span>
+          <div
+            className="circular-progress"
+            style={{
+              background: `conic-gradient(#e94948 ${
+                mongoProgress * 3.6
+              }deg, #ededed 0deg)`,
+            }}
+          >
+            <span className="progress-value">{mongoProgress}%</span>
           </div>
-          <span className="skill-name">Python</span>
+          <span className="skill-name">MongoDB</span>
         </div>
       </div>
     </div>

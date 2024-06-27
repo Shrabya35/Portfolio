@@ -19,7 +19,7 @@ const Footer = () => {
           <div className="footer-start-title">Shrabya | Portfolio</div>
           <div className="footer-detail">
             <p>
-            <MdEmail /> shrabyaraj@gmail.com
+              <MdEmail /> shrabyaraj@gmail.com
             </p>
             <p>
               <FaMapMarkerAlt /> Morang,Nepal
@@ -67,7 +67,7 @@ const Footer = () => {
           </ul>
           <ul className="footer-menu">
             <li>
-              <a href="#">Home</a>
+              <a href="#home">Home</a>
             </li>
             <li>
               <a href="#About">About</a>
