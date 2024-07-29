@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/Portfolio/static/css/main.14f73dad.css",
+    "main.js": "/Portfolio/static/js/main.bf14e79d.js",
+    "static/js/453.1407b060.chunk.js": "/Portfolio/static/js/453.1407b060.chunk.js",
+    "static/media/sangeet.png": "/Portfolio/static/media/sangeet.811ebd9e01dd4a775f23.png",
+    "static/media/cont-mob.png": "/Portfolio/static/media/cont-mob.0c3543d1acacb1804067.png",
+    "static/media/lynxline.png": "/Portfolio/static/media/lynxline.f4c7aaea506b560ed755.png",
+    "static/media/about-mob.png": "/Portfolio/static/media/about-mob.b9464431341e56dc21bf.png",
+    "static/media/contact.png": "/Portfolio/static/media/contact.b32862300adf64e3ca73.png",
+    "static/media/Shrabya_CV.pdf": "/Portfolio/static/media/Shrabya_CV.5a89cb69bd25d4248464.pdf",
+    "static/media/about.png": "/Portfolio/static/media/about.2468168316fcc7d4e628.png",
+    "static/media/hello.jpg": "/Portfolio/static/media/hello.b2115944aea4ab8f7a40.jpg",
+    "static/media/net-nest.png": "/Portfolio/static/media/net-nest.6ed4fcc40a0cd4300c8f.png",
+    "static/media/con-cal.png": "/Portfolio/static/media/con-cal.2ae1fcc61fd2b24c278b.png",
+    "static/media/con-mail.png": "/Portfolio/static/media/con-mail.8aafb5151b603cead77b.png",
+    "index.html": "/Portfolio/index.html",
+    "main.14f73dad.css.map": "/Portfolio/static/css/main.14f73dad.css.map",
+    "main.bf14e79d.js.map": "/Portfolio/static/js/main.bf14e79d.js.map",
+    "453.1407b060.chunk.js.map": "/Portfolio/static/js/453.1407b060.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.14f73dad.css",
+    "static/js/main.bf14e79d.js"
+  ]
+}
